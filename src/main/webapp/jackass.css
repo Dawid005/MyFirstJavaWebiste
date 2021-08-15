@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+#jackass{
+	background-color:blue;
+	color:purple;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+<!--
+.index-h2{
+	color: red;
+}
+-->
+p{
+	color: pink;
+}
+
+#index-h2{
+	color:green;
+}
+
+h1 {
+	font-family: arial;
+}
+
+#cool{
+	font-family: Georgia;
+}
+
+#TimesNewRoman{
+	font-family: "Times New Roman";
+	font-size: 22px;
+}
+
+#Style{
+	font-style: oblique;
+}
+
+#Weight{
+	font-weight: 100;
+}
+
+#TextAlign{
+	text-align: justify;
+}
+
+#TextDecoration{
+	text-decoration: underline;
+}
+
+#TextIndent{
+	text-indent:inherit;
+}
+
+#TextIndent2{
+	text-indent: 30px;
+}
