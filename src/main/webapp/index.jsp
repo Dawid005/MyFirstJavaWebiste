@@ -122,5 +122,10 @@
 	 
 	</div>
 </div>
+
+<%
+	out.println("Hello World");
+%>
+
 </body>
 </html>

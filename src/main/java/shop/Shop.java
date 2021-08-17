@@ -16,14 +16,12 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/Shop")
 public class Shop extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
     /**
      * @see HttpServlet#HttpServlet()
      */
-//    public Shop() {
-//        super();
-//        // TODO Auto-generated constructor stub
-//    }
+   // public Shop() {
+   //     
+  //  }
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
@@ -36,7 +34,7 @@ public class Shop extends HttpServlet {
         String parametr2 = request.getParameter("parametr2");
         String parametr3 = request.getParameter("parametr3");
 
-        out.println("Wczytanie 3 parametrow z zadania :");
+        out.println("I have three values :");
         out.println(parametr1);
         out.println(parametr2);
         out.println(parametr3);
@@ -50,7 +48,8 @@ public class Shop extends HttpServlet {
 	//	doGet(request, response);
 //	}
 	public void doPost(HttpServletRequest request,
-            HttpServletResponse response)	throws ServletException, IOException {
+        HttpServletResponse response)	throws ServletException, IOException {
+
 		PrintWriter out = response.getWriter();
 
 		String product1 = (request.getParameter("parametr1"));
