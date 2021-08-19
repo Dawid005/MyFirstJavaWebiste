@@ -29,36 +29,6 @@
 			color:blue;
 		}
 		
-		
-		#samsara
-		{
-			text-decoration: none;
-			text-align:center;'
-			margin-left:auto;
-			margin-right:auto;
-			color:black;
-		}
-		
-		#StreetAngel
-		{
-			text-decoration: none;
-		}
-		
-		#hero
-		{
-			text-decoration: none;
-		}
-		
-		#Shop
-		{
-			text-decoration: none;
-		}
-		
-		#jackass
-		{
-			text-decoration: none;
-		}
-		
 		#Gallery
 		{
 			width:1000px;
@@ -86,6 +56,77 @@
 			width:500px;
 			float:left;
 		}
+		
+		#Time1{
+			color: black;
+			margin-left:auto;
+			margin-right:auto;
+			text-align:center;
+		}
+		
+		#Time2{
+			color: orange;
+			margin-left:auto;
+			margin-right:auto;
+			text-align:center;
+		}
+		
+		#Shop1{
+			color: black;
+			margin-left:auto;
+			margin-right:auto;
+			text-align:center;
+		}
+		
+		#Shop2{
+			color: orange;
+			margin-left:auto;
+			margin-right:auto;
+			text-align:center;
+		}
+		
+		#Hero1{
+			color: black;
+			margin-left:auto;
+			margin-right:auto;
+			text-align:center;
+		}
+		
+		#Hero2{
+			color: orange;
+			margin-left:auto;
+			margin-right:auto;
+			text-align:center;
+		}
+		
+		#streetAngel1{
+			color: black;
+			margin-left:auto;
+			margin-right:auto;
+			text-align:center;
+		}
+		
+		#streetAngel2{
+			color: orange;
+			margin-left:auto;
+			margin-right:auto;
+			text-align:center;
+		}
+		
+		#samsara1{
+			color: black;
+			margin-left:auto;
+			margin-right:auto;
+			text-align:center;
+		}
+		
+		#samsara2{
+			color: orange;
+			margin-left:auto;
+			margin-right:auto;
+			text-align:center;
+		}
+		
 	</style>
 
 </head>
@@ -105,27 +146,38 @@
 	</div>
 	
 	<div id="list">
-	
-		<br>
+		</br>		
+		<div id="samsara1">
+			<h2> Samsara(2011)</h2>
+		</div>
+			<h2>  <a href= "http://localhost:8080/App1.1/first.jsp"  id="streetAngel2"> (Click here) </a>   </h2>
+			
+		<div id="streetAngel1">
+			<h2> Street Angel (1937)</h2>
+		</div>
+			<h2>  <a href= "http://localhost:8080/App1.1/second.jsp"  id="streetAngel2"> (Click here) </a>   </h2>
 		
-		<h2> <a href="http://localhost:8080/App1.1/first.jsp" style="color: Black" id="samsara">Samsara (2011) (Click here)</a> </h2>
+		<div id="Hero1">
+			<h2> Hero (2002)</h2>
+		</div>
+			<h2>  <a href= "http://localhost:8080/App1.1/third.jsp" id="Hero2"> (Click here) </a>   </h2>
 		
-		<h2> <a href="http://localhost:8080/App1.1/second.jsp" style="color: Black" id="StreetAngel">Street Angel (1937) (Click here)</a> </h2>
+		<div id="Shop1">
+			<h2>  Buy this movie on DVD! Here! </h2>
+		</div>
+			<h2>  <a href= "http://localhost:8080/App1.1/shop.jsp"  id="Shop2"> (Click here) </a>   </h2>
 		
-		<h2> <a href="http://localhost:8080/App1.1/third.jsp" style="color: Black" id="hero">Hero (2002) (Click here)</a></h2>
+		<div id="Time1">
+			<h2> On our website you can even see actual date and time. </h2>
+		</div>
+			<h2>  <a href= "http://localhost:8080/App1.1/Interactive.html" id="Time2"> (Click here) </a>   </h2>
 		
-		<h2> <a href="http://localhost:8080/App1.1/shop.jsp" style="color: Black" id="Shop"> Buy this movie on DVD! Here! (Just click)</a></h2>
-		
-		<h2> <a href="http://localhost:8080/App1.1/jackass.html" style="color: Black" id="jackass"> Jackass</a></h2>
 	</br></br></br></br>
 	
 	 
 	</div>
 </div>
 
-<%
-	out.println("Hello World");
-%>
-
 </body>
+
 </html>

@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import java.io.FileWriter;
+
 
 /**
  * Servlet implementation class Shop
@@ -38,6 +40,15 @@ public class Shop extends HttpServlet {
         out.println(parametr1);
         out.println(parametr2);
         out.println(parametr3);
+      /*  
+        int prod1 = Integer.parseInt(parametr1);
+		int prod2 = Integer.parseInt(parametr2);
+		int prod3 = Integer.parseInt(parametr3);
+		
+		int TotalCost = prod1 * 15 + prod2 * 25 + prod3 * 35;
+		
+		out.println("Total cost of your order is: "+ TotalCost + "$");
+		out.println("Hello World");*/
 	}
 
 	/**
@@ -47,6 +58,7 @@ public class Shop extends HttpServlet {
 		// TODO Auto-generated method stub
 	//	doGet(request, response);
 //	}
+	
 	public void doPost(HttpServletRequest request,
         HttpServletResponse response)	throws ServletException, IOException {
 
@@ -61,7 +73,7 @@ public class Shop extends HttpServlet {
 		int prod3 = Integer.parseInt(product3);
 		
 		int TotalCost = prod1 * 15 + prod2 * 25 + prod3 * 35;
-		out.println("You have to pay: " + TotalCost + "$.");
-		out.println("Have a good day, Sir");
+		
+		out.println("Total cost of your order is: "+ TotalCost + "$");
 	}
 }

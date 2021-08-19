@@ -43,7 +43,7 @@
 	
 	#all
 	{
-		background-color:blue;
+		background-color:Black;
 		height:740px;
 	}
 	#text

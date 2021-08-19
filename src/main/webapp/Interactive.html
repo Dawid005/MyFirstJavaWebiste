@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style>
+	
+	#clock{
+		text-align:center;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+	#theImage1{
+		text-align:center;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+	#Hello{
+		text-align:center;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+</style>
+
+	<script type = "text/javascript">
+
+	var today = new Date();	
+	
+	var day = today.getDate();
+	var month = today.getMonth()+1;
+	var year = today.getFullYear();
+
+	var hour = today.getHours();
+	var minut = today.getMinutes();
+	var second = today.getSeconds();
+	
+	var text = "Hello, now is:";
+	
+        var img = document.createElement('img');
+        img.src = "images/clockCalendar.png";
+        document.getElementById('body').appendChild(img);
+    
+	
+	</script>
+</head>
+<body>
+	<div id = "Hello"> aaa</div>
+	
+	<div id = "clock"> aaa </div>
+	
+	</br>  </br> </br>
+	
+	<div id="theImage1">  </div>
+		
+	
+	<script type ="text/javascript">
+		document.getElementById("clock").innerHTML = day +"/"+month+"/"+year +"|" + hour+":"+ minut+":" + second;
+		
+		document.getElementById("Hello").innerHTML = text;
+		
+		document.getElementById("theImage1").appendChild(img);
+	</script>
+		
+	</div>
+</body>
+	
+</html>
