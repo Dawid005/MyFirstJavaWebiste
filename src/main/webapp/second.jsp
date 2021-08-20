@@ -35,6 +35,14 @@
 	}
 </style>
 
+	<script type="text/javascript">
+
+		function Open(){
+		
+			window.open('http://localhost:8080/App1.1/shop.jsp');
+		}
+	</script>
+
 </head>
 <body>
 	<div id="container">
@@ -70,6 +78,11 @@
 		<div id="home">
 			 <h3> <a href = "http://localhost:8080/App1.1/"> Go to home Page</a> </h3>
 		</div>
+		
+		<div id="Shop">
+			<input type = "submit" value= "Buy this film" onclick= "Open()"/>	
+		</div>
+		
 	</div>
 </body>
 </html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Exercise JavaScript</title>
+
+<script type="text/javascript">
+
+	function check(){
+		var number = document.getElementById("number").value;
+	
+		if(number > 0){
+			document.write("Number is positive");
+		}else if(number == 0){
+			document.write("Number is just zero");
+		}else
+			document.write("Number is negative");
+		
+		document.write("</br>");
+		
+		document.write(number);
+		
+		window.open('http://localhost:8080/App1.1/learnJS.html');
+		
+	}
+	
+</script>
+
+</head>
+<body>
+	
+	<input type = "text" id="number"/>
+	<input type = "submit" value= "Check" onclick= "check()"/>	
+	
+</body>
+</html>

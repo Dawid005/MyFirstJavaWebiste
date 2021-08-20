@@ -52,6 +52,16 @@
 	}
 	
 	</style>
+	
+	
+	<script type="text/javascript">
+
+		function Open(){
+		
+			window.open('http://localhost:8080/App1.1/shop.jsp');
+		
+		}
+	</script>
 	</head>
 <body>
 <div id="all">
@@ -71,13 +81,19 @@
 			in 70 mm format and output to digital format. The film premiered at the 2011 Toronto International Film 
 			Festival and received a limited release in August 2012.
 		</div>
-	
+		
+		
+		
 		<div id="filmweb">
 			<h2> <a href="https://www.filmweb.pl/film/Samsara-2011-335332">Samsara on FilmWeb</a> </h2>
 		</div>
 	
 		<div id="home">
 			 <h4> <a href = "http://localhost:8080/App1.1/"> Go to home Page</a> </h4>
+		</div>
+		
+		<div id="Shop">
+			<input type = "submit" value= "Buy this film" onclick= "Open()"/>	
 		</div>
 	</div>
 </div> 

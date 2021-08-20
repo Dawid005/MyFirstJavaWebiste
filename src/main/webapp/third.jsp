@@ -86,7 +86,22 @@
 			color:purple;
 		}
 		
+		#Shop
+		{
+			text-align: center;
+			margin-left:auto;
+			margin-right:auto;
+			color:purple;
+		}
 	</style>
+
+	<script type="text/javascript">
+
+		function Open(){
+		
+			window.open('http://localhost:8080/App1.1/shop.jsp');
+		}
+	</script>
 
 </head>
 <body>
@@ -138,8 +153,10 @@
 		</br> </br>
 		<h3> <a href = "http://localhost:8080/App1.1/"> Go to home Page</a> </h3>
 	</div>
-	<h1>
-	</h1>
+	
+	<div id="Shop">
+			<input type = "submit" value= "Buy this film" onclick= "Open()"/>	
+	</div>
 	
 </body>
 </html>
