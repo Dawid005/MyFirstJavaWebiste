@@ -10,17 +10,19 @@
 		var number = document.getElementById("number").value;
 	
 		if(number > 0){
-			document.write("Number is positive");
+			document.getElementById("result").innerHTML="Number is positive";
 		}else if(number == 0){
-			document.write("Number is just zero");
-		}else
-			document.write("Number is negative");
+			document.getElementById("result").innerHTML=("Number is just zero");
+		}else if (number <0){
+			document.getElementById("result").innerHTML=("Number is negative");
+		}
+		else{ 
+			document.getElementById("result").innerHTML=("It's not a number");
+		} 
+		document.getElementById("test").innerHTML=(number*number+" - second power");
+		document.getElementById("test1").innerHTML=(number*number*number+" - third power");
+		document.getElementById("test2").innerHTML=(number*number*number*number+" - fourth power");
 		
-		document.write("</br>");
-		
-		document.write(number);
-		
-		window.open('http://localhost:8080/App1.1/learnJS.html');
 		
 	}
 	
@@ -31,6 +33,14 @@
 	
 	<input type = "text" id="number"/>
 	<input type = "submit" value= "Check" onclick= "check()"/>	
+	
+	<div id="result"> </div>
+	
+	<div id="test"> </div>
+	
+	<div id="test1"> </div>
+	
+	<div id="test2"> </div>
 	
 </body>
 </html>

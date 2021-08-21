@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+	<script type = "text/javascript">
+	
+		function print(){
+			
+			var number1 = document.getElementById("window1").value;
+			var number2 = document.getElementById("window2").value;
+			
+			var Text1="";
+			
+			for(i=number1; i<=number2; i++){
+				Text1 = Text1 + i.toString() + " ";
+			}
+			document.getElementById("result").innerHTML=Text1;
+			
+			if(number1 > number2)
+				document.getElementById("result").innerHTML="Number 1 is greater than number 2.";
+			
+			if(number1 > 0){
+			}else if(number1 == 0){
+			}else if (number1 <0){
+			}
+			else{ 
+				document.getElementById("result").innerHTML="In first window you didn't write a number.";
+			} 
+			
+			if(number2 > 0){
+			}else if(number2 == 0){
+			}else if (number2 <0){
+			}
+			else{ 
+				document.getElementById("result").innerHTML="In second window you didn't write a number.";
+			} 
+			
+			if((number2 >0) || (number1 >0)){
+			}else if((number2 == 0) || (number1 == 0)){
+			}else if ((number2<0 ) || (number1 <0)){
+			}
+			else{ 
+				document.getElementById("result").innerHTML="In both window you didn't write a number.";
+			}
+			
+			if((number1 <0 && number2 <0 )){
+				Text1 = "";
+				number1 = number1 - number1 - number1;
+				number2 = number2 - number2 - number2;
+				for(i = number1; i>=number2; i--){
+					Text1 = Text1 + "-" + i.toString() + " ";
+				}
+				document.getElementById("result").innerHTML=Text1;
+			}
+			
+		}
+		
+	</script>
+
+	<style>
+		#all{
+			margin-left:auto;
+			margin-right:auto;
+			text-align:center;
+		}
+			
+		#result{
+			background-color: orange;
+		}
+			
+	</style>
+
+</head>
+<body>
+	<div id="all">	
+		<input type = "text" id="window1"/>
+		<input type = "text" id = "window2"/>
+		<br>
+		<input type = "submit" value = "Show" onclick="print()"/>
+	
+		<div id="result"> </div>
+	</div>
+	
+</body>
+</html>
