@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Learn JavaScript 3</title>
+
+	<style>
+		body{
+		
+		background-color: black;
+		font-size: 24px;
+		color: white;
+		
+		}
+		
+	</style>
+	
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script type = "text/javascript">
+		
+	var number = Math.floor(Math.random()*5)+1;
+	
+	
+	var timer1 = 0;
+	var timer2 = 0;
+	
+	function setPhoto(numberOfPhoto){
+		
+		number = numberOfPhoto -1;
+		clearTimeout(timer1);
+		clearTimeout(timer2);
+		hide();
+		setTimeout("changePhoto()", 500);
+		//
+		
+	}
+	
+	function hide(){
+		$("#photos").fadeOut(500);
+	}
+	
+	function changePhoto(){
+		number++;
+		if(number > 5)
+			number = 1;
+		
+		var file = "<img src =\" images/photos" + number.toString() +".jpg\" />";
+		
+		document.getElementById("photos").innerHTML = file;
+		$("#photos").fadeIn(500);
+		
+		timer1 = setTimeout("changePhoto()", 3000);;
+		timer2 = 	setTimeout("hide()", 2500);
+		
+	}
+	
+	</script>
+
+</head>
+
+<body onload="changePhoto()">
+	
+	<span onclick= "setPhoto(1)" style = "cursor:pointer">[1]</span>
+	<span onclick= "setPhoto(2)" style = "cursor:pointer">[2]</span>
+	<span onclick= "setPhoto(3)" style = "cursor:pointer">[3]</span>
+	<span onclick= "setPhoto(4)" style = "cursor:pointer">[4]</span>
+	<span onclick= "setPhoto(5)" style = "cursor:pointer">[5]</span>
+	
+	<div id="photos"> </div>
+	
+	<div id="text"> </div>
+	
+</body>
+
+</html>

@@ -10,16 +10,25 @@
 			
 			var number1 = document.getElementById("window1").value;
 			var number2 = document.getElementById("window2").value;
+			var number3;
+			var number4;
 			
 			var Text1="";
 			
-			for(i=number1; i<=number2; i++){
-				Text1 = Text1 + i.toString() + " ";
+			if((number1 > number2)&&((number1 >0 ) && (number2 > 0))){
+				for(i=number1; i>=number2; i--){
+					Text1 = Text1 + i.toString() + " " ;
+				}
+				
+				document.getElementById("result").innerHTML=Text1;
 			}
-			document.getElementById("result").innerHTML=Text1;
 			
-			if(number1 > number2)
-				document.getElementById("result").innerHTML="Number 1 is greater than number 2.";
+			if((number1 < number2) && ((number1 > 0) &&( number2 >0))){
+				for(i=number1; i<=number2; i++){
+					Text1 = Text1 + i.toString() + " ";
+				}
+				document.getElementById("result").innerHTML=Text1;
+			}
 			
 			if(number1 > 0){
 			}else if(number1 == 0){
@@ -37,6 +46,7 @@
 				document.getElementById("result").innerHTML="In second window you didn't write a number.";
 			} 
 			
+			
 			if((number2 >0) || (number1 >0)){
 			}else if((number2 == 0) || (number1 == 0)){
 			}else if ((number2<0 ) || (number1 <0)){
@@ -45,17 +55,47 @@
 				document.getElementById("result").innerHTML="In both window you didn't write a number.";
 			}
 			
-			if((number1 <0 && number2 <0 )){
+			if(number1 > number2){
+				if(number1 <0 && number2 <0 ){	
+					
+					Text1 = "";
+					number3 = number1 - number1 - number1;
+					number4 = number2 - number2 - number2;
+					for(i = number3; i>=number4; i--){
+						Text1 = Text1 + "-" + i.toString() + " ";
+					}
+					
+					document.getElementById("result").innerHTML=Text1;
+				}
+			}
+			
+			if((number1 <0 && number2 <0 ) && (number1 < number2)){
 				Text1 = "";
-				number1 = number1 - number1 - number1;
-				number2 = number2 - number2 - number2;
-				for(i = number1; i>=number2; i--){
+				number3 = number1 - number1 - number1;
+				number4 = number2 - number2 - number2;
+				for(i = number3; i<=number4; i++){
 					Text1 = Text1 + "-" + i.toString() + " ";
 				}
 				document.getElementById("result").innerHTML=Text1;
 			}
 			
-		}
+			if((number1 < 0 || number1 ==0 ) && (number2 >= 0)){
+				Text1 = "";
+				for(i = number1; i<=number2; i++){
+					Text1 = Text1 + i.toString() + " ";
+				}
+				document.getElementById("result").innerHTML=Text1;
+			}
+		
+		
+		if((number2 < 0 || number2 ==0 ) && (number1 >= 0)){
+			Text1 = "";
+			for(i = number1; i>=number2; i--){
+				Text1 = Text1 + i.toString() + " ";
+			}
+			document.getElementById("result").innerHTML=Text1;
+		}	
+	}
 		
 	</script>
 
@@ -81,6 +121,7 @@
 		<input type = "submit" value = "Show" onclick="print()"/>
 	
 		<div id="result"> </div>
+		
 	</div>
 	
 </body>
