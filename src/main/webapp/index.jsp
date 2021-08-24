@@ -127,6 +127,19 @@
 			text-align:center;
 		}
 		
+		#Game1{
+			color: black;
+			margin-left:auto;
+			margin-right:auto;
+			text-align:center;
+		}
+		
+		#Game2{
+			color: orange;
+			margin-left:auto;
+			margin-right:auto;
+			text-align:center;
+		}
 	</style>
 
 </head>
@@ -172,6 +185,10 @@
 		</div>
 			<h2>  <a href= "http://localhost:8080/App1.1/Interactive.html" id="Time2"> (Click here) </a>   </h2>
 		
+		<div id="Game1">
+			<h2>Play a little game and try to guess our motto.</h2>
+		</div>
+			<h2> <a href = "http://localhost:8080/App1.1/learnJS4.html" id="Game2">(Click here)</a>		</h2>
 	</br></br></br></br>
 	
 	 
